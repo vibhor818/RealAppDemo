@@ -1,0 +1,17 @@
+﻿@model IEnumerable<RealAppDemo.Models.Customer>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CustomerId</td>
+            <td>@item.CustomerName</td>
+            <td>@item.CustomerAddress</td>
+        </tr>
+    }
+
+</table>
